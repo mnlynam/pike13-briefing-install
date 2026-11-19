@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Add Briefing to your bookmarks bar to run and share Pike13 reports.">
+  <meta name="description" content="Installation instructions for the Pike13 Briefing bookmarklet.">
   <meta name="color-scheme" content="light">
   <title>Install Briefing</title>
   <style>
@@ -18,8 +18,7 @@
     main { overflow: hidden; border: 1px solid #dce4ef; border-radius: 18px; background: white; box-shadow: 0 12px 40px #1d31570a; }
     .accent { height: 5px; background: linear-gradient(90deg, #2563eb, #0ea5e9); }
     .content { padding: 36px 40px 28px; }
-    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 36px); line-height: 1.2; letter-spacing: -0.8px; }
-    .intro { margin: 0 0 28px; color: #53627a; max-width: 540px; }
+    h1 { margin: 0 0 28px; font-size: clamp(28px, 4vw, 36px); line-height: 1.2; letter-spacing: -0.8px; }
     .steps { list-style: none; counter-reset: setup; padding: 0; margin: 0; }
     .steps > li { position: relative; padding: 0 0 26px 42px; counter-increment: setup; }
     .steps > li::before { content: counter(setup); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%; background: #edf3fe; color: #1e55ac; font-weight: 700; text-align: center; line-height: 28px; font-size: 14px; }
@@ -48,7 +47,6 @@
     button:hover { background: #f0f5ff; }
     .footnote { padding: 20px 40px; border-top: 1px solid #e5eaf2; background: #fbfcfe; font-size: 14px; color: #53627a; }
     .footnote p:last-child { margin-bottom: 0; }
-    footer { margin-top: 18px; text-align: center; font-size: 14px; color: #607089; }
     .mobile-note { display: none; }
     @media (max-width: 600px) {
       .shell { margin: 24px auto; padding: 0 16px; }
@@ -71,7 +69,6 @@
       <div class="accent"></div>
       <div class="content">
         <h1>Install Briefing</h1>
-        <p class="intro">Add Briefing to your bookmarks bar, then open your Pike13 reports with one click.</p>
         <p class="mobile-note">Open this page in Chrome or Edge on a computer to install the bookmark.</p>
         <ol class="steps">
           <li>
@@ -109,11 +106,9 @@
         </details>
       </div>
       <aside class="footnote">
-        <p>Briefing uses your existing Pike13 login. No extension or separate account is needed, and updates load automatically when you launch it.</p>
         <p>If the new tab is blocked, allow pop-ups for your Pike13 site and try again. Use <strong>Re-run</strong> to refresh a report; after closing it, launch Briefing again from Pike13.</p>
       </aside>
     </main>
-    <footer>Install once. Use it whenever you need a report.</footer>
   </div>
   <script>
     const bookmark = document.getElementById('bookmark');
